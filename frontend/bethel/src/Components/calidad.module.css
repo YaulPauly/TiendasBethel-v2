@@ -1,0 +1,41 @@
+.contenedor_calidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.contenedor_calidad__title{
+    margin: 40px 0;
+    text-align: center;
+    font-family: Montserrat;
+}
+.contenedor_calidad__title h2 {
+    font-weight: 400;
+}
+
+.contenedor_elementos_calidad {
+    margin: 0;
+    font-weight: 400;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.elemento_calidad {
+    display: flex;
+    flex-direction: column;
+    margin: 0 80px;
+    max-width: 182px;
+}
+
+.elemento_calidad_description {
+    margin: 30px 0;
+    font-family: Montserrat;
+    padding: 10px;
+    text-align: center;
+    color: #868686;
+}

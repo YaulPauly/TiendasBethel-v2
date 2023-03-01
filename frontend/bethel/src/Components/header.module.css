@@ -3,17 +3,13 @@
     display: flex;
     max-width: 100%;
     height: 100vh;
-    justify-content: center;
+    justify-content: space-around;
     background-image: url(../../public/home-1.jpg)
-}
-
-.contenedor_logo{
-    left: 0;
-    margin-right: 15%;
 }
 
 .logo{
     width: 171px;
+    cursor: pointer;
 }
 
 .contenedor_menu{
@@ -37,5 +33,6 @@
 }
 
 .menu__elemento:hover {
-    text-decoration: underline;
+    text-decoration: underline 0.15em #868686;
+    cursor: pointer;
 }

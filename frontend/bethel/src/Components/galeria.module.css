@@ -1,0 +1,19 @@
+.contenedor_galeria{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin: 0 10px;
+}
+.galeria_img {
+    width: 15%;
+    height: 15%;
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s;
+}
+.galeria_img:hover{
+    --escala: 1.2;
+    cursor:pointer;
+}
+
