@@ -16,14 +16,6 @@
     padding: 20px;
 }
 
-.contenedor_footer_logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 210px;
-    width: 15%;
-}
-
 .footer_logo {
     width: 90%;
     margin-bottom: 20px;
@@ -34,28 +26,12 @@
     text-align: center;
 }
 
-.contenedor_footer_direccion{
-    width: 15%;
+.contenedor_footer_element {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 210px;
-}
-
-.contenedor_footer_contacto{
     width: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 210px;
-}
-
-.contenedor_footer_redes{
-    width: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 210px;
 }
 
 .contenedor_footer_tags {
@@ -93,4 +69,13 @@
 .footer_contenido_social:hover{
     cursor: pointer;
     color: #868686;
+}
+
+@media (max-width: 360px) {
+    .contenedor_footer_elements {
+        flex-direction: column;
+    }
+    .contenedor_footer_element {
+        width: 200px;
+    }
 }

@@ -17,3 +17,14 @@
     cursor:pointer;
 }
 
+@media (max-width: 360px) {
+    .contenedor_galeria{
+        margin: 0 50px;
+    }
+    .galeria_img {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 20px;
+    }
+
+}

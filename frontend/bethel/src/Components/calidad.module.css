@@ -39,3 +39,9 @@
     text-align: center;
     color: #868686;
 }
+
+@media (max-width: 360px) {
+    .contenedor_elementos_calidad{
+        flex-direction: column;
+    }
+}
