@@ -1,21 +1,27 @@
 
 .header{
     display: flex;
-    max-width: 100%;
-    height: 100vh;
+    top: 0;
+    width: 100%;
+    height: auto;
     justify-content: space-around;
-    background-image: url(../../public/home-1.jpg);
-    background-attachment: fixed;
+    align-items: center;
+    background: border-box;
+    position: absolute;
 }
 
 .logo{
-    width: 171px;
+    width: 140px;
     cursor: pointer;
 }
 
 .contenedor_menu{
     display: flex;
-    max-width: 983px;
+    max-width: 100%;
+}
+
+.contenedor_menu_desplegagle{
+    display: none;
 }
 
 .contenedor_menu__elementos{
@@ -43,10 +49,87 @@
     display: none;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 872px) {
+    .header{
+        z-index: 2;
+    }
+
+    .logo{
+        width: 120px;
+    }
+
+    .icon_phone{
+        display: flex;
+        font-size: 30px;
+        color: #868686;
+        cursor: pointer;     
+        border: none;
+        background: bottom;
+    }
+    .contenedor_menu{
+        display: none;
+        flex-flow: column nowrap;
+        height: 50vh;
+        width: 100%;
+    }
+    .contenedor_menu_desplegagle{
+        display: block;
+       }
+       
+        .contenedor_menu.isActive{
+           display: flex;
+       }
+   
+       .contenedor_menu__elementos {
+           flex-direction: column;
+           position: absolute;
+           width: 100%;
+           height: auto;
+           background: #a7851f;
+           width: 100%;
+           left: 0;
+           z-index: 2;
+           top: 130px;
+       }
+   
+       .menu__elemento {
+           padding: 1.5em 100%;
+           margin: 0;
+       }
+       
+       .menu__elemento:hover {
+           width: 100%;
+           height: auto;
+           background-color: #868686;
+           cursor: pointer;
+       }
+}
+
+@media (max-width: 720px) {
+    .header{
+        height: auto;
+        background-image: url(../../public/home-1.jpg);
+        width: 100%;
+        position: fixed;
+    }
     .logo{
         width: 100px;
-        margin-top: 20px;
+    }
+    .contenedor_menu__elementos {
+        position: fixed;
+        top: 100px;
+    }
+}
+
+@media (max-width: 420px) {
+    .header{
+        height: auto;
+        background-image: url(../../public/home-1.jpg);
+        width: 100%;
+    }
+
+    .logo{
+        width: 80px;
     }
 
     .icon_phone{
@@ -54,14 +137,13 @@
         font-size: 30px;
         color: #868686;
         cursor: pointer;
-        
+        background: bottom;
         border: none;
-        margin-top: 60px;
-        margin-left: 80px;
     }
     .contenedor_menu{
         display: none;
         flex-flow: column nowrap;
+        top: 0;
         height: 50vh;
         width: 100%;
     }
@@ -72,15 +154,14 @@
 
     .contenedor_menu__elementos {
         flex-direction: column;
-        margin-top: 80px;
-        z-index: 2;
+        margin-top: 0px;
+        top: 85px;
         width: 100%;
         left: 0;
     }
 
     .menu__elemento {
-        margin: 1em 0;
-    }
-    
-
+        padding: 1.5em 100%;
+        margin: 0;
+    }   
 }

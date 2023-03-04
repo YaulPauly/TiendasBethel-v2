@@ -1,0 +1,25 @@
+.contenedor_slyder {
+    max-width: 100%;
+}
+.img_slyder {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 872px) {
+    .contenedor_slyder {
+        width: 872px;
+    }
+}
+
+@media (max-width: 720px) {
+    .contenedor_slyder {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 420px) {
+    .img_slyder {
+    display: none;
+    }
+}

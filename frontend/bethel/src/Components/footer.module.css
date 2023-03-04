@@ -71,7 +71,17 @@
     color: #868686;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 872px) {
+    .footer_logo {
+        width: 150px;
+        margin-bottom: 0;
+    }
+    .contenedor_footer_element {
+        align-items: center;
+    }
+}
+
+@media (max-width: 720px) {
     .contenedor_footer_elements {
         flex-direction: column;
     }
@@ -79,3 +89,13 @@
         width: 200px;
     }
 }
+
+@media (max-width: 420px) {
+    .contenedor_footer_elements {
+        flex-direction: column;
+    }
+    .contenedor_footer_element {
+        width: 200px;
+    }
+}
+

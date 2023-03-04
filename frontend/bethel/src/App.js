@@ -1,24 +1,19 @@
-import React, { Component } from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home, About } from "./pages";
 import './App.css';
-import Calidad from './Components/Calidad';
-import Footer from './Components/Footer';
-import Galeria from './Components/Galeria';
-import Header from './Components/Header';
-import ProductsHome from './Components/ProductsHome';
 
 
-class App extends Component {
-  render() {
+function App() {
     return (
-      <div className="App">
-          <Header/>
-          <Calidad/>
-          <ProductsHome/>
-          <Galeria/>
-          <Footer/>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/nosotros' element={<About/>}/>
+          </Routes>
+        </div>
+      </BrowserRouter>
     );
-  }
 }
 
 export default App;

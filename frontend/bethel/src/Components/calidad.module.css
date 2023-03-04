@@ -39,9 +39,23 @@
     text-align: center;
     color: #868686;
 }
-
-@media (max-width: 360px) {
+@media (max-width: 872px) {
     .contenedor_elementos_calidad{
-        flex-direction: column;
+        width: 100%;
     }
 }
+
+@media (max-width: 720px) {
+    .contenedor_elementos_calidad{
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .contenedor_calidad {
+        margin-top: 120px;
+    }
+}
+
