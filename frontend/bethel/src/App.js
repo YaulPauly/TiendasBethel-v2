@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home, About } from "./pages";
+import { Home, About, Contact } from "./pages";
 import './App.css';
-
+import "@fontsource/montserrat";
 
 function App() {
     return (
@@ -10,6 +10,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/nosotros' element={<About/>}/>
+            <Route path='/contactanos' element={<Contact/>}/>
           </Routes>
         </div>
       </BrowserRouter>

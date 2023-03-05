@@ -9,8 +9,8 @@ import Slyder from "../Components/Slyder";
 const Home = () => {
   return (
     <div>
-        <Header />
-        <Slyder />
+        <Header logo="/bethel_logo.png" color_menu="black"/>
+        <Slyder image="/home-1.jpg"/>
         <Calidad />
         <ProductsHome />
         <Galeria />

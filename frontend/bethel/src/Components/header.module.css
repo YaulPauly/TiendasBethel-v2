@@ -41,7 +41,7 @@
 }
 
 .menu__elemento:hover {
-    text-decoration: underline 0.15em #868686;
+    text-decoration: underline 0.15em #CDA53F;
     cursor: pointer;
 }
 
